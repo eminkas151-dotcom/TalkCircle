@@ -1,3 +1,137 @@
-const SETTINGS={bookingEmail:"your-email@example.com"};
-const tr={en:{announcement:"New groups are forming now — trial conversation available",announcementButton:"Book trial",navPrograms:"Programs",navSchedule:"Schedule",navAbout:"About",navReviews:"Reviews",trialButton:"Book a trial",eyebrow:"Small online conversation clubs",heroTitle:"Speak with confidence, one conversation at a time.",heroText:"Live online sessions for teenagers and adults. Only 3–4 people per group, modern topics and plenty of time to speak.",heroPrimary:"Try a conversation",heroSecondary:"See the schedule",proofGroup:"people per group",proofSession:"live session",proofLanguages:"languages",hostLabel:"Your conversation host",hostText:"Native English speaker · French & Spanish · multilingual learning",onlineStatus:"Online clubs",thisWeek:"This week's topic",topicTitle:"Can AI make us more creative?",everyoneSpeaks:"Everyone speaks",builtFor:"Built for real-world speaking practice",programsEyebrow:"Choose your path",programsTitle:"More than a language lesson",programsIntro:"Each club is built around conversation, useful vocabulary and a friendly international atmosphere.",programEnglish:"English Conversation Club",programEnglishText:"Current affairs, films, travel, study, culture and life abroad.",programFrench:"French Conversation Club",programFrenchText:"Natural phrases, everyday situations, culture and confident speaking.",programSpanish:"Spanish Conversation Club",programSpanishText:"Real-life conversation about travel, food, people, films and ideas.",tagTeen:"Teen groups",tagAdult:"Adult groups",tagDebate:"Debate",tagTravel:"Travel",tagCulture:"Culture",tagSocial:"Social topics",reservePlace:"Reserve a place",experienceEyebrow:"A better speaking experience",experienceTitle:"Small enough to feel personal. Structured enough to improve.",experienceText:"You do not disappear in a large class. Every participant gets space to speak, ask questions and receive useful feedback.",feature1:"Maximum four participants",feature2:"Prepared weekly discussion themes",feature3:"Useful vocabulary before or after class",feature4:"Gentle correction without interrupting the flow",sampleSession:"Sample session",sampleTitle:"Living abroad: freedom or challenge?",timeline1Title:"Warm-up",timeline1Text:"Quick personal questions",timeline2Title:"Main discussion",timeline2Text:"Guided conversation and debate",timeline3Title:"Feedback",timeline3Text:"Vocabulary, corrections and takeaways",scheduleEyebrow:"Upcoming groups",scheduleTitle:"Choose a time that works",scheduleIntro:"These are example groups. Change the days, times and available places directly in the HTML file.",english:"English",french:"French",spanish:"Spanish",teenConversation:"Teen Conversation",everydayFrench:"Everyday French",spanishTravel:"Spanish for Travel",saturday:"Saturday",sunday:"Sunday",wednesday:"Wednesday",placesLeft:"places left",newGroup:"new group",joinGroup:"Join group",timezoneNote:"All times are shown in Vienna time. Other time zones can be arranged.",aboutEyebrow:"Meet Emilia",aboutTitle:"A multilingual host who understands how language learning feels",aboutText1:"Emilia is a native English speaker and speaks French and Spanish at a high level, as well as Russian and German.",aboutText2:"She has published children's books and has strong digital and creative skills. Her clubs focus on real communication, confidence and curiosity.",photoPlaceholder:"Add Emilia's photo here later",publishedBooks:"published books",languagesKnown:"languages",badgeNative:"Native English",badgeFrench:"French",badgeSpanish:"Spanish",badgeAuthor:"Published author",badgeDigital:"Digital skills",reviewsEyebrow:"What learners can expect",reviewsTitle:"A warm, motivating atmosphere",review1:"“I finally had enough time to speak instead of only listening to a teacher.”",review2:"“The topics feel modern and interesting, and the group is small enough to feel comfortable.”",review3:"“I liked receiving useful phrases after the session. It made the conversation practical.”",demoReviews:"These are demonstration reviews. Replace them with real feedback later.",finalEyebrow:"Start with one conversation",finalTitle:"Find your group and start speaking.",finalText:"Book a trial session or send a request for a new time.",footerText:"Small online conversation clubs in English, French and Spanish.",bookingEyebrow:"Booking request",bookingTitle:"Let’s find the right group",nameLabel:"Name",emailLabel:"Email",clubLabel:"Club",levelLabel:"Current level",ageLabel:"Age group",teen:"Teenager",adult:"Adult",notSure:"Not sure",timeLabel:"Preferred day/time",messageLabel:"Message (optional)",sendRequest:"Send booking request",formNote:"Your email app will open with the request prepared."},ru:{announcement:"Новые группы формируются сейчас — доступна пробная беседа",announcementButton:"Пробная запись",navPrograms:"Программы",navSchedule:"Расписание",navAbout:"Об Эмилии",navReviews:"Отзывы",trialButton:"Записаться на пробное",eyebrow:"Небольшие разговорные клубы онлайн",heroTitle:"Говорите уверенно — одна беседа за другой.",heroText:"Живые онлайн-встречи для подростков и взрослых. Только 3–4 человека в группе, современные темы и много времени на разговор.",heroPrimary:"Попробовать беседу",heroSecondary:"Посмотреть расписание",proofGroup:"человека в группе",proofSession:"одно занятие",proofLanguages:"языка",hostLabel:"Ведущая разговорных клубов",hostText:"Родной английский · французский и испанский · многоязычное обучение",onlineStatus:"Онлайн-клубы",thisWeek:"Тема этой недели",topicTitle:"Может ли ИИ сделать нас креативнее?",everyoneSpeaks:"Говорит каждый",builtFor:"Создано для настоящей разговорной практики",programsEyebrow:"Выберите направление",programsTitle:"Больше, чем языковой урок",programsIntro:"Каждый клуб строится вокруг живой беседы, полезной лексики и дружелюбной международной атмосферы.",programEnglish:"Разговорный клуб английского",programEnglishText:"Новости, фильмы, путешествия, учёба, культура и жизнь за границей.",programFrench:"Разговорный клуб французского",programFrenchText:"Естественные фразы, повседневные ситуации, культура и уверенная речь.",programSpanish:"Разговорный клуб испанского",programSpanishText:"Живые разговоры о путешествиях, еде, людях, фильмах и идеях.",tagTeen:"Для подростков",tagAdult:"Для взрослых",tagDebate:"Дебаты",tagTravel:"Путешествия",tagCulture:"Культура",tagSocial:"Общественные темы",reservePlace:"Забронировать место",experienceEyebrow:"Удобный формат",experienceTitle:"Достаточно мало для личного общения. Достаточно структурировано для прогресса.",experienceText:"В большой группе легко потеряться. Здесь у каждого есть время говорить, задавать вопросы и получать полезную обратную связь.",feature1:"Не более четырёх участников",feature2:"Подготовленные темы каждую неделю",feature3:"Полезная лексика до или после занятия",feature4:"Мягкое исправление без остановки разговора",sampleSession:"Пример занятия",sampleTitle:"Жизнь за границей: свобода или испытание?",timeline1Title:"Разминка",timeline1Text:"Короткие личные вопросы",timeline2Title:"Основная беседа",timeline2Text:"Направляемое обсуждение и дебаты",timeline3Title:"Обратная связь",timeline3Text:"Лексика, исправления и выводы",scheduleEyebrow:"Ближайшие группы",scheduleTitle:"Выберите удобное время",scheduleIntro:"Это пример расписания. Дни, время и количество мест можно менять прямо в файле HTML.",english:"Английский",french:"Французский",spanish:"Испанский",teenConversation:"Разговорный клуб для подростков",everydayFrench:"Повседневный французский",spanishTravel:"Испанский для путешествий",saturday:"Суббота",sunday:"Воскресенье",wednesday:"Среда",placesLeft:"свободных места",newGroup:"новая группа",joinGroup:"Присоединиться",timezoneNote:"Время указано по Вене. Можно организовать группы и для других часовых поясов.",aboutEyebrow:"Знакомьтесь: Эмилия",aboutTitle:"Многоязычная ведущая, которая понимает, как ощущается изучение языков",aboutText1:"Английский для Эмилии родной; она также хорошо владеет французским и испанским, говорит по-русски и изучает немецкий.",aboutText2:"Она опубликовала детские книги и обладает сильными цифровыми и творческими навыками. Её клубы посвящены реальному общению, уверенности и любознательности.",photoPlaceholder:"Позже добавьте сюда фотографию Эмилии",publishedBooks:"опубликованные книги",languagesKnown:"языков",badgeNative:"Родной английский",badgeFrench:"Французский",badgeSpanish:"Испанский",badgeAuthor:"Автор книг",badgeDigital:"Цифровые навыки",reviewsEyebrow:"Что получают участники",reviewsTitle:"Тёплая и мотивирующая атмосфера",review1:"«Наконец у меня было достаточно времени говорить, а не только слушать преподавателя».",review2:"«Темы современные и интересные, а небольшая группа помогает чувствовать себя комфортно».",review3:"«Мне понравилось получать полезные выражения после встречи. Это делает практику прикладной».",demoReviews:"Это демонстрационные отзывы. Позже замените их настоящими.",finalEyebrow:"Начните с одной беседы",finalTitle:"Найдите свою группу и начните говорить.",finalText:"Запишитесь на пробное занятие или предложите удобное время.",footerText:"Небольшие онлайн-клубы английского, французского и испанского.",bookingEyebrow:"Заявка на запись",bookingTitle:"Подберём подходящую группу",nameLabel:"Имя",emailLabel:"Электронная почта",clubLabel:"Клуб",levelLabel:"Текущий уровень",ageLabel:"Возрастная группа",teen:"Подросток",adult:"Взрослый",notSure:"Не уверен(а)",timeLabel:"Предпочтительный день и время",messageLabel:"Сообщение (необязательно)",sendRequest:"Отправить заявку",formNote:"Откроется ваша почтовая программа с подготовленной заявкой."}};
-let lang=localStorage.getItem("talkcircleLanguage")||"en";const dialog=document.getElementById("bookingDialog"),club=document.getElementById("club");function apply(l){lang=l;document.documentElement.lang=l;document.querySelectorAll("[data-i18n]").forEach(e=>{const k=e.dataset.i18n;if(tr[l][k])e.textContent=tr[l][k]});document.getElementById("languageToggle").textContent=l==="en"?"RU":"EN";localStorage.setItem("talkcircleLanguage",l)}document.getElementById("languageToggle").onclick=()=>apply(lang==="en"?"ru":"en");document.querySelectorAll("[data-open-booking]").forEach(b=>b.onclick=()=>{club.value=b.dataset.club;dialog.showModal()});document.getElementById("closeDialog").onclick=()=>dialog.close();dialog.onclick=e=>{if(e.target===dialog)dialog.close()};document.getElementById("bookingForm").onsubmit=e=>{e.preventDefault();if(SETTINGS.bookingEmail==="your-email@example.com"){alert(lang==="en"?"Replace your-email@example.com in script.js with your real email.":"Замените your-email@example.com в script.js на настоящий email.");return}const d=new FormData(e.target),s=encodeURIComponent(`TalkCircle booking: ${d.get("club")}`),b=encodeURIComponent(`Name: ${d.get("name")}\nEmail: ${d.get("email")}\nClub: ${d.get("club")}\nLevel: ${d.get("level")}\nAge group: ${d.get("ageGroup")}\nPreferred time: ${d.get("preferredTime")}\n\nMessage:\n${d.get("message")||"-"}`);location.href=`mailto:${SETTINGS.bookingEmail}?subject=${s}&body=${b}`;dialog.close()};const o=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("visible");o.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>o.observe(e));document.getElementById("year").textContent=new Date().getFullYear();apply(lang);
+
+const SETTINGS = {
+  bookingEmail: "your-email@example.com"
+};
+
+const translations = {
+  en: {
+    navClubs: "Clubs", navWhy: "Why small groups", navAbout: "About Emilia",
+    trialButton: "Book a trial",
+    eyebrow: "Small online conversation clubs",
+    heroTitle: "Speak more. Feel more confident.",
+    heroText: "English, French and Spanish conversation practice in small groups of only 3–4 people.",
+    viewClubs: "View clubs",
+    factPeople: "people per group", factTime: "live session", factLanguages: "languages",
+    hostLabel: "Conversation host", hostText: "Native English speaker with strong French and Spanish.",
+    clubsEyebrow: "Choose your language", clubsTitle: "Three simple conversation clubs",
+    clubsText: "Each meeting has one clear topic, useful vocabulary and gentle corrections.",
+    englishTitle: "English Conversation", englishText: "Travel, culture, study, films, current topics and everyday life.",
+    frenchTitle: "French Conversation", frenchText: "Natural phrases, practical topics, travel and culture.",
+    spanishTitle: "Spanish Conversation", spanishText: "Travel, food, films, people and real-life situations.",
+    maxFour: "Maximum 4 participants", everyoneSpeaks: "Everyone gets time to speak",
+    feedback: "Short personal feedback", perSession: "per session", bookPlace: "Book a place",
+    whyEyebrow: "Why it works", whyTitle: "Small groups make speaking easier",
+    benefit1Title: "More speaking time", benefit1Text: "You are not lost in a large class. Everyone participates.",
+    benefit2Title: "Comfortable atmosphere", benefit2Text: "Mistakes are normal, and corrections are gentle.",
+    benefit3Title: "Useful topics", benefit3Text: "The conversation is based on real life, not only textbook exercises.",
+    aboutEyebrow: "About Emilia", aboutTitle: "A multilingual host with a creative background",
+    aboutText1: "English is Emilia's native language. She also speaks French and Spanish at a high level, as well as Russian and German.",
+    aboutText2: "She has published children's books and has strong digital skills. Her goal is to create a friendly place where people speak naturally and become more confident.",
+    badgeNative: "Native English", badgeFrench: "French", badgeSpanish: "Spanish",
+    badgeBooks: "3 published books", badgeDigital: "Digital skills",
+    ctaEyebrow: "Start simply", ctaTitle: "Book one trial conversation.",
+    ctaText: "We will help you choose the right language, level and group.",
+    footerText: "Small online conversation clubs in English, French and Spanish.",
+    formEyebrow: "Booking request", formTitle: "Find the right group",
+    nameLabel: "Name", emailLabel: "Email", clubLabel: "Club", levelLabel: "Current level",
+    notSure: "Not sure", timeLabel: "Preferred day/time", messageLabel: "Message (optional)",
+    sendRequest: "Send booking request", formNote: "Your email app will open with the request prepared."
+  },
+  ru: {
+    navClubs: "Клубы", navWhy: "Почему малые группы", navAbout: "Об Эмилии",
+    trialButton: "Записаться на пробное",
+    eyebrow: "Небольшие разговорные клубы онлайн",
+    heroTitle: "Говорите больше. Чувствуйте себя увереннее.",
+    heroText: "Разговорная практика английского, французского и испанского в группах всего по 3–4 человека.",
+    viewClubs: "Посмотреть клубы",
+    factPeople: "человека в группе", factTime: "одно занятие", factLanguages: "языка",
+    hostLabel: "Ведущая клуба", hostText: "Родной английский, сильный французский и испанский.",
+    clubsEyebrow: "Выберите язык", clubsTitle: "Три простых разговорных клуба",
+    clubsText: "У каждой встречи одна понятная тема, полезная лексика и мягкое исправление ошибок.",
+    englishTitle: "Разговорный английский", englishText: "Путешествия, культура, учёба, фильмы, современные темы и повседневная жизнь.",
+    frenchTitle: "Разговорный французский", frenchText: "Естественные фразы, практические темы, путешествия и культура.",
+    spanishTitle: "Разговорный испанский", spanishText: "Путешествия, еда, фильмы, люди и реальные жизненные ситуации.",
+    maxFour: "Не более 4 участников", everyoneSpeaks: "Говорит каждый",
+    feedback: "Короткая личная обратная связь", perSession: "за занятие", bookPlace: "Забронировать место",
+    whyEyebrow: "Почему это работает", whyTitle: "В маленькой группе говорить легче",
+    benefit1Title: "Больше разговорной практики", benefit1Text: "Вы не теряетесь в большой группе. Участвует каждый.",
+    benefit2Title: "Комфортная атмосфера", benefit2Text: "Ошибки — это нормально, а исправления делаются мягко.",
+    benefit3Title: "Полезные темы", benefit3Text: "Разговор строится вокруг реальной жизни, а не только учебника.",
+    aboutEyebrow: "Об Эмилии", aboutTitle: "Многоязычная ведущая с творческим опытом",
+    aboutText1: "Английский для Эмилии родной. Она также хорошо владеет французским и испанским, говорит по-русски и изучает немецкий.",
+    aboutText2: "Она опубликовала детские книги и обладает сильными цифровыми навыками. Её цель — создать дружелюбное пространство, где люди говорят естественно и становятся увереннее.",
+    badgeNative: "Родной английский", badgeFrench: "Французский", badgeSpanish: "Испанский",
+    badgeBooks: "3 опубликованные книги", badgeDigital: "Цифровые навыки",
+    ctaEyebrow: "Начните просто", ctaTitle: "Запишитесь на одну пробную беседу.",
+    ctaText: "Мы поможем выбрать подходящий язык, уровень и группу.",
+    footerText: "Небольшие онлайн-клубы английского, французского и испанского.",
+    formEyebrow: "Заявка на запись", formTitle: "Подберём подходящую группу",
+    nameLabel: "Имя", emailLabel: "Электронная почта", clubLabel: "Клуб", levelLabel: "Текущий уровень",
+    notSure: "Не уверен(а)", timeLabel: "Предпочтительный день и время", messageLabel: "Сообщение (необязательно)",
+    sendRequest: "Отправить заявку", formNote: "Откроется ваша почтовая программа с подготовленной заявкой."
+  }
+};
+
+let currentLanguage = localStorage.getItem("talkcircleLanguage") || "en";
+const dialog = document.getElementById("bookingDialog");
+const clubSelect = document.getElementById("club");
+
+function applyLanguage(language) {
+  currentLanguage = language;
+  document.documentElement.lang = language;
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (translations[language][key]) {
+      element.textContent = translations[language][key];
+    }
+  });
+  document.getElementById("languageToggle").textContent = language === "en" ? "RU" : "EN";
+  localStorage.setItem("talkcircleLanguage", language);
+}
+
+document.getElementById("languageToggle").addEventListener("click", () => {
+  applyLanguage(currentLanguage === "en" ? "ru" : "en");
+});
+
+document.querySelectorAll("[data-open-booking]").forEach((button) => {
+  button.addEventListener("click", () => {
+    clubSelect.value = button.dataset.club;
+    dialog.showModal();
+  });
+});
+
+document.getElementById("closeDialog").addEventListener("click", () => dialog.close());
+
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) dialog.close();
+});
+
+document.getElementById("bookingForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (SETTINGS.bookingEmail === "your-email@example.com") {
+    alert(currentLanguage === "en"
+      ? "Please replace your-email@example.com in script.js with your real email address."
+      : "Замените your-email@example.com в файле script.js на настоящий адрес электронной почты.");
+    return;
+  }
+
+  const data = new FormData(event.currentTarget);
+  const subject = encodeURIComponent(`TalkCircle booking: ${data.get("club")}`);
+  const body = encodeURIComponent(
+`Name: ${data.get("name")}
+Email: ${data.get("email")}
+Club: ${data.get("club")}
+Level: ${data.get("level")}
+Preferred time: ${data.get("preferredTime")}
+
+Message:
+${data.get("message") || "-"}`
+  );
+
+  window.location.href = `mailto:${SETTINGS.bookingEmail}?subject=${subject}&body=${body}`;
+  dialog.close();
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+applyLanguage(currentLanguage);

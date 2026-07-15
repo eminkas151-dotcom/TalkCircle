@@ -1,69 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TalkCircle by Emilia — small online conversation clubs in English, French and Spanish." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TalkCircle by Emilia — small online conversation clubs in English, French and Spanish.">
   <title>TalkCircle by Emilia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announcement"><span data-i18n="announcement">New groups are forming now — trial conversation available</span><button type="button" data-open-booking data-club="Free trial conversation" data-i18n="announcementButton">Book trial</button></div>
   <header class="site-header">
-    <a class="brand" href="#top"><span class="brand-mark">TC</span><span class="brand-text"><strong>TalkCircle</strong><small>by Emilia</small></span></a>
-    <nav><a href="#programs" data-i18n="navPrograms">Programs</a><a href="#schedule" data-i18n="navSchedule">Schedule</a><a href="#about" data-i18n="navAbout">About</a><a href="#reviews" data-i18n="navReviews">Reviews</a></nav>
-    <div class="header-actions"><button id="languageToggle" class="language-button" type="button">RU</button><button class="button small primary" type="button" data-open-booking data-club="Free trial conversation" data-i18n="trialButton">Book a trial</button></div>
+    <a class="brand" href="#top">
+      <span class="brand-mark">TC</span>
+      <span>
+        <strong>TalkCircle</strong>
+        <small>by Emilia</small>
+      </span>
+    </a>
+
+    <nav>
+      <a href="#clubs" data-i18n="navClubs">Clubs</a>
+      <a href="#why" data-i18n="navWhy">Why small groups</a>
+      <a href="#about" data-i18n="navAbout">About Emilia</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="languageToggle" class="language-button" type="button">RU</button>
+      <button class="button small primary" type="button" data-open-booking data-club="Free trial conversation" data-i18n="trialButton">Book a trial</button>
+    </div>
   </header>
+
   <main id="top">
     <section class="hero">
-      <div class="hero-copy reveal">
-        <div class="hero-badges"><span>🇬🇧 English</span><span>🇫🇷 Français</span><span>🇪🇸 Español</span></div>
+      <div class="hero-copy">
         <p class="eyebrow" data-i18n="eyebrow">Small online conversation clubs</p>
-        <h1 data-i18n="heroTitle">Speak with confidence, one conversation at a time.</h1>
-        <p class="hero-text" data-i18n="heroText">Live online sessions for teenagers and adults. Only 3–4 people per group, modern topics and plenty of time to speak.</p>
-        <div class="hero-actions"><button class="button primary" type="button" data-open-booking data-club="Free trial conversation" data-i18n="heroPrimary">Try a conversation</button><a class="button ghost" href="#schedule" data-i18n="heroSecondary">See the schedule</a></div>
-        <div class="hero-proof"><div><strong>3–4</strong><span data-i18n="proofGroup">people per group</span></div><div><strong>60 min</strong><span data-i18n="proofSession">live session</span></div><div><strong>3</strong><span data-i18n="proofLanguages">languages</span></div></div>
+        <h1 data-i18n="heroTitle">Speak more. Feel more confident.</h1>
+        <p class="hero-text" data-i18n="heroText">
+          English, French and Spanish conversation practice in small groups of only 3–4 people.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#clubs" data-i18n="viewClubs">View clubs</a>
+          <button class="button secondary" type="button" data-open-booking data-club="Free trial conversation" data-i18n="trialButton">Book a trial</button>
+        </div>
+
+        <div class="hero-facts">
+          <div><strong>3–4</strong><span data-i18n="factPeople">people per group</span></div>
+          <div><strong>60 min</strong><span data-i18n="factTime">live session</span></div>
+          <div><strong>3</strong><span data-i18n="factLanguages">languages</span></div>
+        </div>
       </div>
-      <div class="hero-visual reveal">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="host-card"><div class="avatar"><span>E</span></div><div><p class="host-label" data-i18n="hostLabel">Your conversation host</p><h2>Emilia</h2><p data-i18n="hostText">Native English speaker · French & Spanish · multilingual learning</p></div><div class="online-status"><span></span><em data-i18n="onlineStatus">Online clubs</em></div></div>
-        <div class="floating-card card-topic"><small data-i18n="thisWeek">This week's topic</small><strong data-i18n="topicTitle">Can AI make us more creative?</strong></div>
-        <div class="floating-card card-people"><div class="people-icons"><span>A</span><span>M</span><span>L</span><span>+1</span></div><small data-i18n="everyoneSpeaks">Everyone speaks</small></div>
+
+      <div class="hero-card">
+        <div class="profile-circle">E</div>
+        <p class="host-label" data-i18n="hostLabel">Conversation host</p>
+        <h2>Emilia</h2>
+        <p data-i18n="hostText">Native English speaker with strong French and Spanish.</p>
+        <div class="language-row">
+          <span>🇬🇧 English</span>
+          <span>🇫🇷 Français</span>
+          <span>🇪🇸 Español</span>
+        </div>
       </div>
     </section>
-    <section class="logo-strip"><p data-i18n="builtFor">Built for real-world speaking practice</p><div><span>Conversation</span><span>Confidence</span><span>Vocabulary</span><span>Community</span></div></section>
-    <section id="programs" class="section">
-      <div class="section-heading reveal"><p class="eyebrow" data-i18n="programsEyebrow">Choose your path</p><h2 data-i18n="programsTitle">More than a language lesson</h2><p data-i18n="programsIntro">Each club is built around conversation, useful vocabulary and a friendly international atmosphere.</p></div>
-      <div class="program-grid">
-        <article class="program-card english reveal"><div class="program-top"><span class="flag">🇬🇧</span><span class="level">B1–C1</span></div><h3 data-i18n="programEnglish">English Conversation Club</h3><p data-i18n="programEnglishText">Current affairs, films, travel, study, culture and life abroad.</p><div class="program-tags"><span data-i18n="tagTeen">Teen groups</span><span data-i18n="tagAdult">Adult groups</span><span data-i18n="tagDebate">Debate</span></div><button class="text-button" type="button" data-open-booking data-club="English Conversation Club"><span data-i18n="reservePlace">Reserve a place</span> →</button></article>
-        <article class="program-card french reveal"><div class="program-top"><span class="flag">🇫🇷</span><span class="level">A2–B2</span></div><h3 data-i18n="programFrench">French Conversation Club</h3><p data-i18n="programFrenchText">Natural phrases, everyday situations, culture and confident speaking.</p><div class="program-tags"><span data-i18n="tagTeen">Teen groups</span><span data-i18n="tagTravel">Travel</span><span data-i18n="tagCulture">Culture</span></div><button class="text-button" type="button" data-open-booking data-club="French Conversation Club"><span data-i18n="reservePlace">Reserve a place</span> →</button></article>
-        <article class="program-card spanish reveal"><div class="program-top"><span class="flag">🇪🇸</span><span class="level">A2–B2</span></div><h3 data-i18n="programSpanish">Spanish Conversation Club</h3><p data-i18n="programSpanishText">Real-life conversation about travel, food, people, films and ideas.</p><div class="program-tags"><span data-i18n="tagTeen">Teen groups</span><span data-i18n="tagTravel">Travel</span><span data-i18n="tagSocial">Social topics</span></div><button class="text-button" type="button" data-open-booking data-club="Spanish Conversation Club"><span data-i18n="reservePlace">Reserve a place</span> →</button></article>
+
+    <section id="clubs" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="clubsEyebrow">Choose your language</p>
+        <h2 data-i18n="clubsTitle">Three simple conversation clubs</h2>
+        <p data-i18n="clubsText">Each meeting has one clear topic, useful vocabulary and gentle corrections.</p>
+      </div>
+
+      <div class="club-grid">
+        <article class="club-card english">
+          <div class="club-top">
+            <span class="flag">🇬🇧</span>
+            <span class="level">B1–C1</span>
+          </div>
+          <h3 data-i18n="englishTitle">English Conversation</h3>
+          <p data-i18n="englishText">Travel, culture, study, films, current topics and everyday life.</p>
+          <ul>
+            <li data-i18n="maxFour">Maximum 4 participants</li>
+            <li data-i18n="everyoneSpeaks">Everyone gets time to speak</li>
+            <li data-i18n="feedback">Short personal feedback</li>
+          </ul>
+          <div class="price"><strong>€10</strong><span data-i18n="perSession">per session</span></div>
+          <button class="button dark full" type="button" data-open-booking data-club="English Conversation Club" data-i18n="bookPlace">Book a place</button>
+        </article>
+
+        <article class="club-card french">
+          <div class="club-top">
+            <span class="flag">🇫🇷</span>
+            <span class="level">A2–B2</span>
+          </div>
+          <h3 data-i18n="frenchTitle">French Conversation</h3>
+          <p data-i18n="frenchText">Natural phrases, practical topics, travel and culture.</p>
+          <ul>
+            <li data-i18n="maxFour">Maximum 4 participants</li>
+            <li data-i18n="everyoneSpeaks">Everyone gets time to speak</li>
+            <li data-i18n="feedback">Short personal feedback</li>
+          </ul>
+          <div class="price"><strong>€10</strong><span data-i18n="perSession">per session</span></div>
+          <button class="button dark full" type="button" data-open-booking data-club="French Conversation Club" data-i18n="bookPlace">Book a place</button>
+        </article>
+
+        <article class="club-card spanish">
+          <div class="club-top">
+            <span class="flag">🇪🇸</span>
+            <span class="level">A2–B2</span>
+          </div>
+          <h3 data-i18n="spanishTitle">Spanish Conversation</h3>
+          <p data-i18n="spanishText">Travel, food, films, people and real-life situations.</p>
+          <ul>
+            <li data-i18n="maxFour">Maximum 4 participants</li>
+            <li data-i18n="everyoneSpeaks">Everyone gets time to speak</li>
+            <li data-i18n="feedback">Short personal feedback</li>
+          </ul>
+          <div class="price"><strong>€10</strong><span data-i18n="perSession">per session</span></div>
+          <button class="button dark full" type="button" data-open-booking data-club="Spanish Conversation Club" data-i18n="bookPlace">Book a place</button>
+        </article>
       </div>
     </section>
-    <section class="section experience">
-      <div class="experience-copy reveal"><p class="eyebrow" data-i18n="experienceEyebrow">A better speaking experience</p><h2 data-i18n="experienceTitle">Small enough to feel personal. Structured enough to improve.</h2><p data-i18n="experienceText">You do not disappear in a large class. Every participant gets space to speak, ask questions and receive useful feedback.</p><ul class="check-list"><li data-i18n="feature1">Maximum four participants</li><li data-i18n="feature2">Prepared weekly discussion themes</li><li data-i18n="feature3">Useful vocabulary before or after class</li><li data-i18n="feature4">Gentle correction without interrupting the flow</li></ul></div>
-      <div class="session-card reveal"><div class="session-header"><div><small data-i18n="sampleSession">Sample session</small><h3 data-i18n="sampleTitle">Living abroad: freedom or challenge?</h3></div><span>60 min</span></div><div class="timeline"><div><span>01</span><p><strong data-i18n="timeline1Title">Warm-up</strong><small data-i18n="timeline1Text">Quick personal questions</small></p><em>10 min</em></div><div><span>02</span><p><strong data-i18n="timeline2Title">Main discussion</strong><small data-i18n="timeline2Text">Guided conversation and debate</small></p><em>35 min</em></div><div><span>03</span><p><strong data-i18n="timeline3Title">Feedback</strong><small data-i18n="timeline3Text">Vocabulary, corrections and takeaways</small></p><em>15 min</em></div></div></div>
+
+    <section id="why" class="section soft-section">
+      <div class="section-heading compact">
+        <p class="eyebrow" data-i18n="whyEyebrow">Why it works</p>
+        <h2 data-i18n="whyTitle">Small groups make speaking easier</h2>
+      </div>
+
+      <div class="benefit-grid">
+        <article>
+          <span>01</span>
+          <h3 data-i18n="benefit1Title">More speaking time</h3>
+          <p data-i18n="benefit1Text">You are not lost in a large class. Everyone participates.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-i18n="benefit2Title">Comfortable atmosphere</h3>
+          <p data-i18n="benefit2Text">Mistakes are normal, and corrections are gentle.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-i18n="benefit3Title">Useful topics</h3>
+          <p data-i18n="benefit3Text">The conversation is based on real life, not only textbook exercises.</p>
+        </article>
+      </div>
     </section>
-    <section id="schedule" class="section schedule-section">
-      <div class="section-heading reveal"><p class="eyebrow" data-i18n="scheduleEyebrow">Upcoming groups</p><h2 data-i18n="scheduleTitle">Choose a time that works</h2><p data-i18n="scheduleIntro">These are example groups. Change the days, times and available places directly in the HTML file.</p></div>
-      <div class="schedule-board reveal">
-        <div class="schedule-row"><div class="language-pill english-pill">🇬🇧 <span data-i18n="english">English</span></div><div><strong data-i18n="teenConversation">Teen Conversation</strong><small>B1–B2</small></div><div><strong data-i18n="saturday">Saturday</strong><small>18:00 Vienna</small></div><div class="availability"><strong>2 / 4</strong><small data-i18n="placesLeft">places left</small></div><button class="button small dark" type="button" data-open-booking data-club="English Teen Conversation — Saturday 18:00" data-i18n="joinGroup">Join group</button></div>
-        <div class="schedule-row"><div class="language-pill french-pill">🇫🇷 <span data-i18n="french">French</span></div><div><strong data-i18n="everydayFrench">Everyday French</strong><small>A2–B1</small></div><div><strong data-i18n="sunday">Sunday</strong><small>16:00 Vienna</small></div><div class="availability"><strong>3 / 4</strong><small data-i18n="placesLeft">places left</small></div><button class="button small dark" type="button" data-open-booking data-club="Everyday French — Sunday 16:00" data-i18n="joinGroup">Join group</button></div>
-        <div class="schedule-row"><div class="language-pill spanish-pill">🇪🇸 <span data-i18n="spanish">Spanish</span></div><div><strong data-i18n="spanishTravel">Spanish for Travel</strong><small>A2–B1</small></div><div><strong data-i18n="wednesday">Wednesday</strong><small>19:00 Vienna</small></div><div class="availability"><strong>4 / 4</strong><small data-i18n="newGroup">new group</small></div><button class="button small dark" type="button" data-open-booking data-club="Spanish for Travel — Wednesday 19:00" data-i18n="joinGroup">Join group</button></div>
-      </div><p class="schedule-note" data-i18n="timezoneNote">All times are shown in Vienna time. Other time zones can be arranged.</p>
-    </section>
+
     <section id="about" class="section about-section">
-      <div class="about-visual reveal"><div class="portrait-placeholder"><span>E</span><small data-i18n="photoPlaceholder">Add Emilia's photo here later</small></div><div class="about-stat stat-books"><strong>3</strong><span data-i18n="publishedBooks">published books</span></div><div class="about-stat stat-languages"><strong>5</strong><span data-i18n="languagesKnown">languages</span></div></div>
-      <div class="about-copy reveal"><p class="eyebrow" data-i18n="aboutEyebrow">Meet Emilia</p><h2 data-i18n="aboutTitle">A multilingual host who understands how language learning feels</h2><p data-i18n="aboutText1">Emilia is a native English speaker and speaks French and Spanish at a high level, as well as Russian and German.</p><p data-i18n="aboutText2">She has published children's books and has strong digital and creative skills. Her clubs focus on real communication, confidence and curiosity.</p><div class="about-badges"><span data-i18n="badgeNative">Native English</span><span data-i18n="badgeFrench">French</span><span data-i18n="badgeSpanish">Spanish</span><span data-i18n="badgeAuthor">Published author</span><span data-i18n="badgeDigital">Digital skills</span></div></div>
+      <div class="about-card">
+        <div class="about-avatar">E</div>
+        <div class="about-badges">
+          <span data-i18n="badgeNative">Native English</span>
+          <span data-i18n="badgeFrench">French</span>
+          <span data-i18n="badgeSpanish">Spanish</span>
+          <span data-i18n="badgeBooks">3 published books</span>
+          <span data-i18n="badgeDigital">Digital skills</span>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="aboutEyebrow">About Emilia</p>
+        <h2 data-i18n="aboutTitle">A multilingual host with a creative background</h2>
+        <p data-i18n="aboutText1">English is Emilia's native language. She also speaks French and Spanish at a high level, as well as Russian and German.</p>
+        <p data-i18n="aboutText2">She has published children's books and has strong digital skills. Her goal is to create a friendly place where people speak naturally and become more confident.</p>
+      </div>
     </section>
-    <section id="reviews" class="section reviews-section"><div class="section-heading reveal"><p class="eyebrow" data-i18n="reviewsEyebrow">What learners can expect</p><h2 data-i18n="reviewsTitle">A warm, motivating atmosphere</h2></div><div class="review-grid"><article class="review-card reveal"><div class="stars">★★★★★</div><p data-i18n="review1">“I finally had enough time to speak instead of only listening to a teacher.”</p><strong>Anna, B1 English</strong></article><article class="review-card reveal"><div class="stars">★★★★★</div><p data-i18n="review2">“The topics feel modern and interesting, and the group is small enough to feel comfortable.”</p><strong>Marc, French Club</strong></article><article class="review-card reveal"><div class="stars">★★★★★</div><p data-i18n="review3">“I liked receiving useful phrases after the session. It made the conversation practical.”</p><strong>Sofia, Spanish Club</strong></article></div><p class="demo-note" data-i18n="demoReviews">These are demonstration reviews. Replace them with real feedback later.</p></section>
-    <section class="final-cta reveal"><div><p class="eyebrow" data-i18n="finalEyebrow">Start with one conversation</p><h2 data-i18n="finalTitle">Find your group and start speaking.</h2><p data-i18n="finalText">Book a trial session or send a request for a new time.</p></div><button class="button light large" type="button" data-open-booking data-club="Free trial conversation" data-i18n="trialButton">Book a trial</button></section>
+
+    <section class="final-cta">
+      <div>
+        <p class="eyebrow" data-i18n="ctaEyebrow">Start simply</p>
+        <h2 data-i18n="ctaTitle">Book one trial conversation.</h2>
+        <p data-i18n="ctaText">We will help you choose the right language, level and group.</p>
+      </div>
+      <button class="button light" type="button" data-open-booking data-club="Free trial conversation" data-i18n="trialButton">Book a trial</button>
+    </section>
   </main>
-  <footer><div class="footer-brand"><span class="brand-mark">TC</span><div><strong>TalkCircle</strong><small>by Emilia</small></div></div><p data-i18n="footerText">Small online conversation clubs in English, French and Spanish.</p><div class="footer-links"><a href="#programs" data-i18n="navPrograms">Programs</a><a href="#schedule" data-i18n="navSchedule">Schedule</a><a href="#about" data-i18n="navAbout">About</a></div><p class="copyright">© <span id="year"></span> TalkCircle by Emilia</p></footer>
-  <dialog id="bookingDialog"><form id="bookingForm"><button class="close-button" type="button" id="closeDialog">×</button><p class="eyebrow" data-i18n="bookingEyebrow">Booking request</p><h2 data-i18n="bookingTitle">Let’s find the right group</h2><div class="form-grid"><label><span data-i18n="nameLabel">Name</span><input name="name" required /></label><label><span data-i18n="emailLabel">Email</span><input name="email" type="email" required /></label></div><label><span data-i18n="clubLabel">Club</span><select id="club" name="club" required><option>English Conversation Club</option><option>French Conversation Club</option><option>Spanish Conversation Club</option><option>Free trial conversation</option><option>English Teen Conversation — Saturday 18:00</option><option>Everyday French — Sunday 16:00</option><option>Spanish for Travel — Wednesday 19:00</option></select></label><div class="form-grid"><label><span data-i18n="levelLabel">Current level</span><select name="level"><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option data-i18n="notSure">Not sure</option></select></label><label><span data-i18n="ageLabel">Age group</span><select name="ageGroup"><option data-i18n="teen">Teenager</option><option data-i18n="adult">Adult</option></select></label></div><label><span data-i18n="timeLabel">Preferred day/time</span><input name="preferredTime" placeholder="Saturday after 16:00" required /></label><label><span data-i18n="messageLabel">Message (optional)</span><textarea name="message" rows="3"></textarea></label><button class="button primary full" type="submit" data-i18n="sendRequest">Send booking request</button><p class="form-note" data-i18n="formNote">Your email app will open with the request prepared.</p></form></dialog>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-mark">TC</span>
+      <div>
+        <strong>TalkCircle</strong>
+        <small>by Emilia</small>
+      </div>
+    </div>
+    <p data-i18n="footerText">Small online conversation clubs in English, French and Spanish.</p>
+    <p>© <span id="year"></span> TalkCircle by Emilia</p>
+  </footer>
+
+  <dialog id="bookingDialog">
+    <form id="bookingForm">
+      <button class="close-button" type="button" id="closeDialog" aria-label="Close">×</button>
+      <p class="eyebrow" data-i18n="formEyebrow">Booking request</p>
+      <h2 data-i18n="formTitle">Find the right group</h2>
+
+      <label>
+        <span data-i18n="nameLabel">Name</span>
+        <input name="name" required>
+      </label>
+
+      <label>
+        <span data-i18n="emailLabel">Email</span>
+        <input name="email" type="email" required>
+      </label>
+
+      <label>
+        <span data-i18n="clubLabel">Club</span>
+        <select id="club" name="club" required>
+          <option>English Conversation Club</option>
+          <option>French Conversation Club</option>
+          <option>Spanish Conversation Club</option>
+          <option>Free trial conversation</option>
+        </select>
+      </label>
+
+      <label>
+        <span data-i18n="levelLabel">Current level</span>
+        <select name="level" required>
+          <option>A2</option>
+          <option>B1</option>
+          <option>B2</option>
+          <option>C1</option>
+          <option data-i18n="notSure">Not sure</option>
+        </select>
+      </label>
+
+      <label>
+        <span data-i18n="timeLabel">Preferred day/time</span>
+        <input name="preferredTime" placeholder="Saturday after 16:00" required>
+      </label>
+
+      <label>
+        <span data-i18n="messageLabel">Message (optional)</span>
+        <textarea name="message" rows="3"></textarea>
+      </label>
+
+      <button class="button primary full" type="submit" data-i18n="sendRequest">Send booking request</button>
+      <p class="form-note" data-i18n="formNote">Your email app will open with the request prepared.</p>
+    </form>
+  </dialog>
+
   <script src="script.js"></script>
 </body>
 </html>
