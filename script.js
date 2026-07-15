@@ -5,94 +5,54 @@ const SETTINGS = {
 
 const translations = {
   en: {
-    home: "Home", clubs: "Clubs", aboutEmilia: "About Emilia", contact: "Contact",
-    smallGroups: "Small groups. Big progress.",
-    heroText: "Friendly conversation clubs in English, French and Spanish for teens and adults.",
-    perGroup: "per group", speakMore: "Speak more", confidence: "with confidence",
-    supportive: "Supportive", atmosphere: "atmosphere",
-    bookTrial: "Book a Free Trial Lesson →",
-    chooseLanguage: "Choose your language",
-    englishTagline: "Speak naturally and confidently",
-    exploreEnglish: "Explore English →",
-    whyTitle: "Why small groups work",
-    why1: "More speaking time for everyone",
-    realConversations: "Real conversations",
-    why2: "Practical topics you care about",
-    personalAttention: "Personal attention",
-    why3: "Feedback and support from your teacher",
-    friendlySpace: "Friendly space",
-    why4: "Feel comfortable, speak freely",
-    upcomingClubs: "Upcoming clubs",
-    conversationClub: "Conversation Club",
-    saturday: "Saturday", sunday: "Sunday", wednesday: "Wednesday",
-    twoPlaces: "2 places left", threePlaces: "3 places left",
-    joinClub: "Join This Club",
-    scheduleNote: "All sessions are 60 minutes · 3–4 students per group · Price: €10 per session",
-    aboutTitle: "About Emilia",
-    aboutText: "Hi! I’m Emilia. I love languages, books and meaningful conversations. I create a friendly space where you can speak, make mistakes and grow with confidence.",
-    nativeEnglish: "Native English speaker",
-    publishedAuthor: "Published author — 3 children’s books",
-    frenchSpanish: "French & Spanish fluency",
-    stepGraduate: "STEP IT Academy graduate",
-    fiveLanguages: "5 languages",
-    teachingTeens: "Experience teaching teens & adults",
-    ready: "Ready to start?",
-    readyText: "Book your free trial lesson and let’s talk!",
-    bookTrialShort: "Book Your Free Trial →",
-    stayInTouch: "Let’s stay in touch",
-    addNumber: "Add your number",
-    footerTagline: "Small groups. Big conversations. Real progress.",
-    bookingRequest: "Booking request",
-    findGroup: "Let’s find the right group",
-    name: "Name", clubLabel: "Club", level: "Current level",
-    notSure: "Not sure", preferredTime: "Preferred day/time",
-    message: "Message (optional)", sendRequest: "Send booking request",
-    emailOpens: "Your email app will open with the request prepared."
+    navClubs: "Clubs", navAbout: "About",
+    eyebrow: "Online conversation clubs",
+    heroTitle: "Speak more. Feel more confident.",
+    heroText: "Friendly online conversation clubs in English, French and Spanish. Small groups of 3–4 people, so everyone gets time to speak.",
+    viewClubs: "View clubs", trialButton: "Book a trial",
+    people: "people per group", session: "conversation session", languages: "languages",
+    chooseClub: "Choose your club", clubsTitle: "Simple conversation practice",
+    clubsIntro: "No complicated levels or long courses. Just a small group, an interesting topic and real conversation.",
+    englishText: "Talk about travel, culture, films, study and everyday life.",
+    frenchText: "Practice natural French through culture, travel and daily topics.",
+    spanishText: "Speak about travel, food, films, people and everyday situations.",
+    smallGroups: "Small groups", realTopics: "Real-life topics",
+    friendlyFeedback: "Friendly feedback", bookPlace: "Book a place",
+    aboutEyebrow: "About Emilia", aboutTitle: "A multilingual conversation host",
+    aboutText1: "English is Emilia's native language. She also speaks French and Spanish at a high level, as well as Russian and German.",
+    aboutText2: "She has published children's books and has strong digital skills. Her goal is to create a friendly place where people can speak naturally and become more confident.",
+    ctaTitle: "Start with one conversation.", ctaText: "Choose a language and book a trial session.",
+    footerText: "Conversation clubs in English, French and Spanish.",
+    formEyebrow: "Booking request", formTitle: "Book your place",
+    nameLabel: "Name", clubLabel: "Club",
+    timeLabel: "Preferred day/time", messageLabel: "Message (optional)",
+    sendRequest: "Send booking request",
+    formNote: "Your email app will open with the request prepared."
   },
   ru: {
-    home: "Главная", clubs: "Клубы", aboutEmilia: "Об Эмилии", contact: "Контакты",
-    smallGroups: "Маленькие группы. Большой прогресс.",
-    heroText: "Дружелюбные разговорные клубы английского, французского и испанского для подростков и взрослых.",
-    perGroup: "в группе", speakMore: "Говорите больше", confidence: "и увереннее",
-    supportive: "Дружелюбная", atmosphere: "атмосфера",
-    bookTrial: "Записаться на бесплатное пробное →",
-    chooseLanguage: "Выберите язык",
-    englishTagline: "Говорите естественно и уверенно",
-    exploreEnglish: "Выбрать английский →",
-    whyTitle: "Почему работают маленькие группы",
-    why1: "Больше времени говорить каждому",
-    realConversations: "Живые разговоры",
-    why2: "Практические темы, которые вам интересны",
-    personalAttention: "Личное внимание",
-    why3: "Обратная связь и поддержка ведущей",
-    friendlySpace: "Комфортная атмосфера",
-    why4: "Чувствуйте себя свободно и говорите",
-    upcomingClubs: "Ближайшие клубы",
-    conversationClub: "Разговорный клуб",
-    saturday: "Суббота", sunday: "Воскресенье", wednesday: "Среда",
-    twoPlaces: "Осталось 2 места", threePlaces: "Осталось 3 места",
-    joinClub: "Присоединиться",
-    scheduleNote: "Все занятия по 60 минут · 3–4 человека в группе · Цена: €10 за занятие",
-    aboutTitle: "Об Эмилии",
-    aboutText: "Привет! Я Эмилия. Я люблю языки, книги и содержательные разговоры. Я создаю дружелюбное пространство, где можно говорить, ошибаться и становиться увереннее.",
-    nativeEnglish: "Английский — родной",
-    publishedAuthor: "Автор 3 детских книг",
-    frenchSpanish: "Свободный французский и испанский",
-    stepGraduate: "Выпускница STEP IT Academy",
-    fiveLanguages: "5 языков",
-    teachingTeens: "Опыт занятий с подростками и взрослыми",
-    ready: "Готовы начать?",
-    readyText: "Запишитесь на бесплатное пробное занятие!",
-    bookTrialShort: "Записаться бесплатно →",
-    stayInTouch: "Оставайтесь на связи",
-    addNumber: "Добавьте ваш номер",
-    footerTagline: "Маленькие группы. Живые разговоры. Настоящий прогресс.",
-    bookingRequest: "Заявка на запись",
-    findGroup: "Подберём подходящую группу",
-    name: "Имя", clubLabel: "Клуб", level: "Текущий уровень",
-    notSure: "Не уверен(а)", preferredTime: "Удобный день и время",
-    message: "Сообщение (необязательно)", sendRequest: "Отправить заявку",
-    emailOpens: "Откроется ваша почтовая программа с подготовленной заявкой."
+    navClubs: "Клубы", navAbout: "Об Эмилии",
+    eyebrow: "Разговорные клубы онлайн",
+    heroTitle: "Говорите больше. Чувствуйте себя увереннее.",
+    heroText: "Дружелюбные разговорные клубы английского, французского и испанского. В группе только 3–4 человека, поэтому говорит каждый.",
+    viewClubs: "Посмотреть клубы", trialButton: "Записаться на пробное",
+    people: "человека в группе", session: "одно занятие", languages: "языка",
+    chooseClub: "Выберите клуб", clubsTitle: "Простая разговорная практика",
+    clubsIntro: "Без сложных уровней и длинных курсов. Только небольшая группа, интересная тема и живой разговор.",
+    englishText: "Обсуждение путешествий, культуры, фильмов, учёбы и повседневной жизни.",
+    frenchText: "Практика естественного французского через культуру, путешествия и бытовые темы.",
+    spanishText: "Разговоры о путешествиях, еде, фильмах, людях и повседневных ситуациях.",
+    smallGroups: "Маленькие группы", realTopics: "Темы из реальной жизни",
+    friendlyFeedback: "Дружелюбная обратная связь", bookPlace: "Забронировать место",
+    aboutEyebrow: "Об Эмилии", aboutTitle: "Многоязычная ведущая клуба",
+    aboutText1: "Английский для Эмилии родной. Она также хорошо владеет французским и испанским, говорит по-русски и изучает немецкий.",
+    aboutText2: "Она опубликовала детские книги и обладает сильными цифровыми навыками. Её цель — создать дружелюбное пространство, где люди могут говорить естественно и становиться увереннее.",
+    ctaTitle: "Начните с одной беседы.", ctaText: "Выберите язык и запишитесь на пробное занятие.",
+    footerText: "Разговорные клубы английского, французского и испанского.",
+    formEyebrow: "Заявка на запись", formTitle: "Забронировать место",
+    nameLabel: "Имя", clubLabel: "Клуб",
+    timeLabel: "Предпочтительный день и время", messageLabel: "Сообщение (необязательно)",
+    sendRequest: "Отправить заявку",
+    formNote: "Откроется ваша почтовая программа с подготовленной заявкой."
   }
 };
 
@@ -107,7 +67,7 @@ function applyLanguage(language) {
     const key = element.dataset.i18n;
     if (translations[language][key]) element.textContent = translations[language][key];
   });
-  document.getElementById("languageToggle").textContent = language === "en" ? "EN ▾" : "RU ▾";
+  document.getElementById("languageToggle").textContent = language === "en" ? "RU" : "EN";
   localStorage.setItem("talkcircleLanguage", language);
 }
 
@@ -123,6 +83,7 @@ document.querySelectorAll("[data-open-booking]").forEach((button) => {
 });
 
 document.getElementById("closeDialog").addEventListener("click", () => dialog.close());
+
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) dialog.close();
 });
@@ -143,7 +104,6 @@ document.getElementById("bookingForm").addEventListener("submit", (event) => {
 `Name: ${data.get("name")}
 Email: ${data.get("email")}
 Club: ${data.get("club")}
-Level: ${data.get("level")}
 Preferred time: ${data.get("preferredTime")}
 
 Message:
