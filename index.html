@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Small online conversation clubs in English, French and Spanish." />
+  <title>TalkCircle — Small Conversation Clubs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">TalkCircle</a>
+    <nav>
+      <a data-i18n="navClubs" href="#clubs">Clubs</a>
+      <a data-i18n="navHow" href="#how">How it works</a>
+      <a data-i18n="navAbout" href="#about">About</a>
+    </nav>
+    <button id="languageToggle" class="language-button" type="button">RU</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">Online speaking practice</p>
+        <h1 data-i18n="heroTitle">Speak more. Learn naturally.</h1>
+        <p class="hero-text" data-i18n="heroText">
+          Friendly conversation clubs in English, French and Spanish.
+          Only 3–4 participants, so everyone gets time to speak.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" data-i18n="viewClubs" href="#clubs">View clubs</a>
+          <button class="button secondary" data-i18n="trialButton" type="button" data-open-booking data-club="Free trial conversation">Book a trial</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="mini-card">
+          <span>🇬🇧</span>
+          <strong data-i18n="englishClub">English Club</strong>
+          <small>B1–C1</small>
+        </div>
+        <div class="mini-card">
+          <span>🇫🇷</span>
+          <strong data-i18n="frenchClub">French Club</strong>
+          <small>A2–B2</small>
+        </div>
+        <div class="mini-card">
+          <span>🇪🇸</span>
+          <strong data-i18n="spanishClub">Spanish Club</strong>
+          <small>A2–B2</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Key benefits">
+      <div><strong>3–4</strong><span data-i18n="people">people per group</span></div>
+      <div><strong>60</strong><span data-i18n="minutes">minutes per session</span></div>
+      <div><strong>100%</strong><span data-i18n="online">online</span></div>
+    </section>
+
+    <section id="clubs" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="chooseClub">Choose your club</p>
+        <h2 data-i18n="smallGroups">Small groups, real conversation</h2>
+        <p data-i18n="clubIntro">Each meeting has a clear topic, useful vocabulary and gentle corrections.</p>
+      </div>
+
+      <div class="club-grid">
+        <article class="club-card">
+          <div class="club-icon">🇬🇧</div>
+          <p class="tag">B1–C1</p>
+          <h3 data-i18n="englishConversation">English Conversation</h3>
+          <p data-i18n="englishDesc">Current affairs, travel, culture, study and everyday life.</p>
+          <ul>
+            <li data-i18n="maxFour">Maximum 4 participants</li>
+            <li data-i18n="weeklyTopics">New topic every week</li>
+            <li data-i18n="feedback">Personal feedback after class</li>
+          </ul>
+          <div class="price"><strong>€10</strong><span data-i18n="perSession">per session</span></div>
+          <button class="button primary full" type="button" data-open-booking data-club="English Conversation Club">Book a place</button>
+        </article>
+
+        <article class="club-card featured">
+          <div class="popular" data-i18n="popular">Popular</div>
+          <div class="club-icon">🇫🇷</div>
+          <p class="tag">A2–B2</p>
+          <h3 data-i18n="frenchConversation">French Conversation</h3>
+          <p data-i18n="frenchDesc">Build confidence with practical topics and natural expressions.</p>
+          <ul>
+            <li data-i18n="maxFour">Maximum 4 participants</li>
+            <li data-i18n="weeklyTopics">New topic every week</li>
+            <li data-i18n="feedback">Personal feedback after class</li>
+          </ul>
+          <div class="price"><strong>€10</strong><span data-i18n="perSession">per session</span></div>
+          <button class="button primary full" type="button" data-open-booking data-club="French Conversation Club">Book a place</button>
+        </article>
+
+        <article class="club-card">
+          <div class="club-icon">🇪🇸</div>
+          <p class="tag">A2–B2</p>
+          <h3 data-i18n="spanishConversation">Spanish Conversation</h3>
+          <p data-i18n="spanishDesc">Speak about travel, food, films, people and real situations.</p>
+          <ul>
+            <li data-i18n="maxFour">Maximum 4 participants</li>
+            <li data-i18n="weeklyTopics">New topic every week</li>
+            <li data-i18n="feedback">Personal feedback after class</li>
+          </ul>
+          <div class="price"><strong>€10</strong><span data-i18n="perSession">per session</span></div>
+          <button class="button primary full" type="button" data-open-booking data-club="Spanish Conversation Club">Book a place</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="simpleProcess">Simple process</p>
+        <h2 data-i18n="howTitle">How it works</h2>
+      </div>
+      <div class="steps">
+        <article><span>1</span><h3 data-i18n="step1Title">Choose a language</h3><p data-i18n="step1Text">Select your level and preferred club.</p></article>
+        <article><span>2</span><h3 data-i18n="step2Title">Reserve a place</h3><p data-i18n="step2Text">Send the short registration form.</p></article>
+        <article><span>3</span><h3 data-i18n="step3Title">Join online</h3><p data-i18n="step3Text">Receive a Google Meet or Zoom link by email.</p></article>
+        <article><span>4</span><h3 data-i18n="step4Title">Speak and improve</h3><p data-i18n="step4Text">Practice for 60 minutes and receive feedback.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow" data-i18n="meetHost">Meet your host</p>
+        <h2 data-i18n="aboutTitle">A multilingual, friendly conversation leader</h2>
+        <p data-i18n="aboutText1">
+          Sessions are led by a multilingual speaker with native-level English,
+          strong French and Spanish, published books and digital skills.
+        </p>
+        <p data-i18n="aboutText2">
+          The goal is not a stressful lesson. It is a comfortable space where people speak,
+          make mistakes and become more confident.
+        </p>
+      </div>
+      <div class="about-panel">
+        <h3 data-i18n="included">Every session includes</h3>
+        <ul>
+          <li data-i18n="topicGuide">A prepared discussion topic</li>
+          <li data-i18n="vocabulary">Useful vocabulary and expressions</li>
+          <li data-i18n="correction">Gentle pronunciation and grammar correction</li>
+          <li data-i18n="summary">A short summary after the meeting</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2 data-i18n="readyTitle">Ready to start speaking?</h2>
+      <p data-i18n="readyText">Book a trial conversation and we will help you choose the right level.</p>
+      <button class="button light" type="button" data-open-booking data-club="Free trial conversation" data-i18n="trialButton">Book a trial</button>
+    </section>
+  </main>
+
+  <footer>
+    <strong>TalkCircle</strong>
+    <p data-i18n="footerText">Small online conversation clubs in English, French and Spanish.</p>
+    <p class="footer-note">© <span id="year"></span> TalkCircle</p>
+  </footer>
+
+  <dialog id="bookingDialog">
+    <form id="bookingForm" method="dialog">
+      <button class="close-button" type="button" id="closeDialog" aria-label="Close">×</button>
+      <p class="eyebrow" data-i18n="bookingEyebrow">Registration</p>
+      <h2 data-i18n="bookingTitle">Book your place</h2>
+
+      <label>
+        <span data-i18n="nameLabel">Name</span>
+        <input id="name" name="name" required />
+      </label>
+
+      <label>
+        <span data-i18n="emailLabel">Email</span>
+        <input id="email" name="email" type="email" required />
+      </label>
+
+      <label>
+        <span data-i18n="clubLabel">Club</span>
+        <select id="club" name="club" required>
+          <option>English Conversation Club</option>
+          <option>French Conversation Club</option>
+          <option>Spanish Conversation Club</option>
+          <option>Free trial conversation</option>
+        </select>
+      </label>
+
+      <label>
+        <span data-i18n="levelLabel">Current level</span>
+        <select id="level" name="level" required>
+          <option>A2</option>
+          <option>B1</option>
+          <option>B2</option>
+          <option>C1</option>
+          <option data-i18n="notSure">Not sure</option>
+        </select>
+      </label>
+
+      <label>
+        <span data-i18n="timeLabel">Preferred day/time</span>
+        <input id="preferredTime" name="preferredTime" placeholder="Example: Saturday after 16:00" required />
+      </label>
+
+      <label>
+        <span data-i18n="messageLabel">Message (optional)</span>
+        <textarea id="message" name="message" rows="3"></textarea>
+      </label>
+
+      <button class="button primary full" type="submit" data-i18n="sendRequest">Send booking request</button>
+      <p class="form-note" data-i18n="formNote">Your email app will open with the request prepared.</p>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
