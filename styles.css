@@ -370,3 +370,48 @@ input, select, textarea {
 .features{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:25px 0}
 .features div,.price-card{background:#fff;border-radius:14px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
 .price-card{text-align:center;max-width:220px;margin:25px auto}
+
+
+/* Final clean About section: no second photo or empty placeholder */
+.about-section {
+  display: block;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-copy {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-visual {
+  display: none !important;
+}
+
+/* Three facts fit neatly on mobile and desktop */
+.facts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Compact TE logo */
+.brand-logo {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 720px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .about-copy {
+    width: 100%;
+  }
+}
