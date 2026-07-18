@@ -17,7 +17,7 @@ const translations = {
     frenchText: "Practice natural French through culture, travel and daily topics.",
     spanishText: "Speak about travel, food, films, people and everyday situations.",
     smallGroups: "Small groups", realTopics: "Real-life topics",
-    friendlyFeedback: "Friendly feedback", bookPlace: "Book a place",
+    friendlyFeedback: "Friendly feedback", bookPlace: "Join your first conversation",
     aboutEyebrow: "About Emilia", aboutTitle: "A multilingual conversation host",
     aboutText1: "English is Emilia\'s native language. She speaks French and Spanish at a high level and also speaks Russian and German.",
     aboutText2: "She has published children's books and has strong digital skills. Her goal is to create a friendly place where people can speak naturally and become more confident.",
@@ -82,7 +82,7 @@ document.getElementById("bookingForm").addEventListener("submit", (event) => {
   }
 
   const data = new FormData(event.currentTarget);
-  const subject = encodeURIComponent(`EmiliaTalk booking: ${data.get("club")}`);
+  const subject = encodeURIComponent(`TalkEasy booking: ${data.get("club")}`);
   const body = encodeURIComponent(
 `Name: ${data.get("name")}
 Email: ${data.get("email")}
