@@ -1,20 +1,20 @@
-# EmiliaTalk — GitHub Pages
+# EmiliaTalk — final GitHub Pages version
 
-Final website files for GitHub Pages.
+Upload these files to the root of the `EmiliaTalk` repository:
 
-## Included
 - `index.html`
 - `styles.css`
 - `script.js`
 - `emilia.jpg`
 
-## Final changes
-- Brand renamed to **EmiliaTalk**
-- Logo initials changed to **ET**
-- Only one photo remains
-- Only 3 languages are shown: English, French and Spanish
-- Repeated price block removed
-- Empty photo space removed
-- Footer updated to © 2026 EmiliaTalk
+Final changes:
+- Price appears only once in the facts section
+- Removed repeated `60 min / €10` from each language card
+- Header subtitle changed to `Online Conversation Clubs`
+- Larger buttons with hover and tap animation
+- Footer includes Email, Instagram and © EmiliaTalk
+- About Emilia text was left unchanged
 
-Upload all files to the root of your GitHub repository.
+Important:
+- In `script.js`, replace `your-email@example.com` with the real booking email.
+- Instagram currently points to `@emiliatalk.club`.
