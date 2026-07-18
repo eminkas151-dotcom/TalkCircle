@@ -13,8 +13,11 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top">
-      <span class="brand-logo" aria-hidden="true"></span>
-      <span><strong>TalkCircle</strong><small>by Emilia</small></span>
+      <span class="brand-logo" aria-hidden="true">TC</span>
+      <span>
+        <strong>TalkCircle</strong>
+        <small>by Emilia</small>
+      </span>
     </a>
 
     <nav>
@@ -26,7 +29,6 @@
       <button id="languageToggle" class="language-button" type="button">EN ▾</button>
       <div id="languageMenu" class="language-menu" hidden>
         <button type="button" data-language="en">EN — English</button>
-        <button type="button" data-language="ru">RU — Русский</button>
         <button type="button" data-language="fr">FR — Français</button>
         <button type="button" data-language="es">ES — Español</button>
       </div>
@@ -39,7 +41,7 @@
         <p class="eyebrow" data-i18n="eyebrow">Online conversation clubs</p>
         <h1 data-i18n="heroTitle">Speak more. Feel more confident.</h1>
         <p class="hero-text" data-i18n="heroText">
-          Friendly online conversation clubs in English, French, Spanish and Russian.
+          Friendly online conversation clubs in English, French and Spanish.
           Small groups of 3–4 people, so everyone gets time to speak.
         </p>
 
@@ -111,30 +113,17 @@
           <div class="club-meta"><span>60 min</span><span>€10</span></div>
           <button class="button dark full" type="button" data-open-booking data-club="Spanish Conversation Club" data-i18n="bookPlace">Book a place</button>
         </article>
-        <article class="club-card russian">
-          <div class="flag">🇷🇺</div>
-          <h3>Russian Conversation Club</h3>
-          <p data-i18n="russianText">Develop confidence and fluency through real conversation in Russian.</p>
-          <ul>
-            <li data-i18n="smallGroups">Small groups</li>
-            <li data-i18n="realTopics">Real-life topics</li>
-            <li data-i18n="friendlyFeedback">Friendly feedback</li>
-          </ul>
-          <div class="club-meta"><span>60 min</span><span>€10</span></div>
-          <button class="button dark full" type="button" data-open-booking data-club="Russian Conversation Club" data-i18n="bookPlace">Book a place</button>
-        </article>
+        
       </div>
     </section>
 
     <section id="about" class="section about-section">
-      <div class="about-visual"><img src="emilia.jpg" alt="Emilia" class="about-photo"></div>
+      <div class="about-visual"></div>
 
       <div class="about-copy">
         <p class="eyebrow" data-i18n="aboutEyebrow">About Emilia</p>
         <h2 data-i18n="aboutTitle">A multilingual conversation host</h2>
-        <p data-i18n="aboutText1">
-          English is Emilia's native language. She speaks Russian, French and Spanish at a high level.
-        </p>
+        <p data-i18n="aboutText1">English is Emilia's native language. She also speaks French and Spanish at a high level.</p>
         <p data-i18n="aboutText2">
           She has published children's books and has strong digital skills. Her goal is to create a friendly place where people can speak naturally and become more confident.
         </p>
@@ -178,7 +167,6 @@
           <option>English Conversation Club</option>
           <option>French Conversation Club</option>
           <option>Spanish Conversation Club</option>
-          <option>Russian Conversation Club</option>
         </select>
       </label>
 
