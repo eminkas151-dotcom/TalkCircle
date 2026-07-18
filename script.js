@@ -24,8 +24,8 @@ const translations = {
     ctaTitle: "Start with one conversation.", ctaText: "Choose a language and book a trial session.",
     footerText: "Conversation clubs in English, French and Spanish.",
     formEyebrow: "Booking request", formTitle: "Book your place",
-    nameLabel: "Name", clubLabel: "Club",
-    timeLabel: "Preferred day/time", messageLabel: "Message (optional)",
+    nameLabel: "Name", clubLabel: "Language",
+    messageLabel: "Message (optional)",
     sendRequest: "Send booking request",
     formNote: "Your email app will open with the request prepared."
   },
@@ -49,8 +49,8 @@ const translations = {
     ctaTitle: "Начните с одной беседы.", ctaText: "Выберите язык и запишитесь на пробное занятие.",
     footerText: "Разговорные клубы английского, французского и испанского.",
     formEyebrow: "Заявка на запись", formTitle: "Забронировать место",
-    nameLabel: "Имя", clubLabel: "Клуб",
-    timeLabel: "Предпочтительный день и время", messageLabel: "Сообщение (необязательно)",
+    nameLabel: "Имя", clubLabel: "Язык",
+    messageLabel: "Сообщение (необязательно)",
     sendRequest: "Отправить заявку",
     formNote: "Откроется ваша почтовая программа с подготовленной заявкой."
   }
@@ -103,8 +103,7 @@ document.getElementById("bookingForm").addEventListener("submit", (event) => {
   const body = encodeURIComponent(
 `Name: ${data.get("name")}
 Email: ${data.get("email")}
-Club: ${data.get("club")}
-Preferred time: ${data.get("preferredTime")}
+Language: ${data.get("club")}
 
 Message:
 ${data.get("message") || "-"}`
