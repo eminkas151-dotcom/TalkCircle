@@ -1,11 +1,20 @@
-# TalkEasy — final clean GitHub version
+# EmiliaTalk — GitHub Pages
 
-Upload all files from this archive to the root of the GitHub repository.
+Final website files for GitHub Pages.
 
-Changes:
-- Logo initials corrected from TC to TE
+## Included
+- `index.html`
+- `styles.css`
+- `script.js`
+- `emilia.jpg`
+
+## Final changes
+- Brand renamed to **EmiliaTalk**
+- Logo initials changed to **ET**
 - Only one photo remains
-- Empty second-photo space removed
-- 3 languages displayed instead of 4
-- Clubs remain English, French and Spanish
-- Mobile spacing cleaned up
+- Only 3 languages are shown: English, French and Spanish
+- Repeated price block removed
+- Empty photo space removed
+- Footer updated to © 2026 EmiliaTalk
+
+Upload all files to the root of your GitHub repository.

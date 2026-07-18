@@ -82,7 +82,7 @@ document.getElementById("bookingForm").addEventListener("submit", (event) => {
   }
 
   const data = new FormData(event.currentTarget);
-  const subject = encodeURIComponent(`TalkEasy booking: ${data.get("club")}`);
+  const subject = encodeURIComponent(`EmiliaTalk booking: ${data.get("club")}`);
   const body = encodeURIComponent(
 `Name: ${data.get("name")}
 Email: ${data.get("email")}
