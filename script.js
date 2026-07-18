@@ -74,13 +74,6 @@ dialog.addEventListener("click", (event) => {
 document.getElementById("bookingForm").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (SETTINGS.bookingEmail === "eglibrary1@gmail.com") {
-    alert(currentLanguage === "en"
-      ? "Please replace eglibrary1@gmail.com in script.js with your real email address."
-      : "Замените eglibrary1@gmail.com в файле script.js на настоящий адрес электронной почты.");
-    return;
-  }
-
   const data = new FormData(event.currentTarget);
   const subject = encodeURIComponent(`EmiliaTalk booking: ${data.get("club")}`);
   const body = encodeURIComponent(
