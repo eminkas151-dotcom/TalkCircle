@@ -1,16 +1,17 @@
-# TalkCircle — final 3-club version
+# EmiliaTalk — GitHub version
 
-Upload these files to the root of your GitHub repository:
+Upload these files to the root of the GitHub repository:
 
 - index.html
 - styles.css
 - script.js
 - emilia.jpg
 
-This version includes:
-- English, French and Spanish conversation clubs
-- English, French and Spanish interface
-- One Emilia photo only
-- Custom TalkCircle logo in the top-left corner
+Changes in this version:
+- New short brand name: EmiliaTalk
+- Suggested social handle: @emiliatalk.club
+- Three clubs only: English, French and Spanish
+- Interface languages: English, French and Spanish
+- Russian greeting removed from the photo area
+- About text: French and Spanish at a high level; also speaks Russian and German
 - €10 per 60-minute lesson
-- No levels and no preferred-time field
