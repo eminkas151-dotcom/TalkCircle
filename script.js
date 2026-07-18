@@ -1,6 +1,6 @@
 
 const SETTINGS = {
-  bookingEmail: "your-email@example.com"
+  bookingEmail: "eglibrary1@gmail.com"
 };
 
 const translations = {
@@ -74,10 +74,10 @@ dialog.addEventListener("click", (event) => {
 document.getElementById("bookingForm").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (SETTINGS.bookingEmail === "your-email@example.com") {
+  if (SETTINGS.bookingEmail === "eglibrary1@gmail.com") {
     alert(currentLanguage === "en"
-      ? "Please replace your-email@example.com in script.js with your real email address."
-      : "Замените your-email@example.com в файле script.js на настоящий адрес электронной почты.");
+      ? "Please replace eglibrary1@gmail.com in script.js with your real email address."
+      : "Замените eglibrary1@gmail.com в файле script.js на настоящий адрес электронной почты.");
     return;
   }
 
